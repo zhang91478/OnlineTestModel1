@@ -40,9 +40,9 @@
         <jsp:setProperty
                 name="question" property="optionFour" value="<%=list.get(i).getOptionFour()%>"/>
         <jsp:setProperty
-                name="question" property="script" value="<%=list.get(i).getScript()%>"/>
+                name="question" property="course" value="<%=list.get(i).getCourse()%>"/>
         <p>
-            <%=i+1%>.<%=question.getStem()%>(分值:<%=question.getScore()%> 题型:<%=question.getScript()%>)
+            <%=i+1%>.<%=question.getStem()%>(分值:<%=question.getScore()%> 题型:<%=question.getCourse()%>)
         </p>
         <input type="hidden" name="<%="num"+i%>" value="<%=question.getNum()%>">
         <input type="radio" name="<%="question"+i%>" id="one" value="<%=question.getOptionOne()%>"/>

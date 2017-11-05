@@ -10,10 +10,10 @@
 <%
     if(session.getAttribute("user") == null){
 %>
-<script type="text/javascript">
+<course type="text/javascript">
     alert("请先登录");
     window.location.href='index.jsp';
-</script>
+</course>
 <%
     }
 %>

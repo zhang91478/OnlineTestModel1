@@ -21,19 +21,19 @@
         if(databaseHelp.isAccountExist(name)){
             //密码错误，提示重新输入
             %>
-            <script type="text/javascript">
+            <course type="text/javascript">
                 alert("密码错误，请重新输入");
                 window.location.href='index.jsp';
-            </script>
+            </course>
             <%
         }
         else {
             //账号不存在
             %>
-            <script type="text/javascript">
+            <course type="text/javascript">
                 alert("账号不存在，请联系管理员");
                 window.location.href='index.jsp';
-            </script>
+            </course>
             <%
         }
     }

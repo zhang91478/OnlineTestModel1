@@ -67,7 +67,7 @@ public class DatabaseHelp {
                 int i = rd.nextInt(16);
                 redio.setNum(resultSet.getInt("num"));
                 redio.setScore(resultSet.getInt("score"));
-                redio.setScript(resultSet.getString("script"));
+                redio.setCourse(resultSet.getString("course"));
                 redio.setStem(resultSet.getString("stem"));
                 redio.setOptionOne(resultSet.getString(RANDOM[i][0]));
                 redio.setOptionTwo(resultSet.getString(RANDOM[i][1]));
@@ -111,7 +111,7 @@ public class DatabaseHelp {
 
     public boolean isAccountAllowed(String account,String passwd){
         String sql = "SELECT * FROM t_user WHERE account ="+"'"
-                +account+"'"+" AND password = '"+passwd+"'";
+                +account+"'"+" AND password = '"+passwd+"' AND permission = 0";
         return isSelectExist(sql);
     }
     public String getUser() {

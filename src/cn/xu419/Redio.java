@@ -12,7 +12,7 @@ public class Redio {
     private String optionThree;
     private String optionFour;
     private int score;
-    private String script;
+    private String course;
 
     public Redio() {
     }
@@ -73,12 +73,12 @@ public class Redio {
         this.score = score;
     }
 
-    public String getScript() {
-        return script;
+    public String getCourse() {
+        return course;
     }
 
-    public void setScript(String script) {
-        this.script = script;
+    public void setCourse(String course) {
+        this.course = course;
     }
 
 }
