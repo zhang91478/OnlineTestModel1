@@ -3,8 +3,6 @@ package cn.xu419;
  * @author 22948
  */
 public class Redio {
-
-
     private int num;
     private String stem;
     private String optionOne;

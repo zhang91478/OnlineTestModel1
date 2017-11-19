@@ -10,7 +10,7 @@
     session.removeAttribute("user");
     session.invalidate();
 %>
-    <course type="text/javascript">
+    <script type="text/javascript">
         alert("退出成功！");
         window.location.href = 'index.jsp';
-    </course>
+    </script>

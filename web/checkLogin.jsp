@@ -13,7 +13,7 @@
     request.setCharacterEncoding("UTF-8");
     String name = request.getParameter("Username");
     String passwd = request.getParameter("Password");
-    DatabaseHelp databaseHelp = new DatabaseHelp("root","Zhangshubo");
+    DatabaseHelp databaseHelp = new DatabaseHelp();
     if(databaseHelp.isAccountAllowed(name,passwd)){
         session.setAttribute("user",name);
         response.sendRedirect("main.jsp");
@@ -21,19 +21,19 @@
         if(databaseHelp.isAccountExist(name)){
             //密码错误，提示重新输入
             %>
-            <course type="text/javascript">
+            <script type="text/javascript">
                 alert("密码错误，请重新输入");
                 window.location.href='index.jsp';
-            </course>
+            </script>
             <%
         }
         else {
             //账号不存在
             %>
-            <course type="text/javascript">
+            <script type="text/javascript">
                 alert("账号不存在，请联系管理员");
                 window.location.href='index.jsp';
-            </course>
+            </script>
             <%
         }
     }

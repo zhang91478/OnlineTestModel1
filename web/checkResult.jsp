@@ -24,5 +24,6 @@
     }
     out.print("你的最终得分为"+result);
 %>
+<a href="quit.jsp">退出</a>
 </body>
 </html>
